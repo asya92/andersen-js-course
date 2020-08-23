@@ -37,7 +37,9 @@ export function task4New() {
   let obj = {
     x,
     y,
-    bar:()=> x+y
+    bar() {
+      return x+y;
+    }
   };
 
   function foo() {

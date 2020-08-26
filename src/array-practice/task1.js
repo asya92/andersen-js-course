@@ -14,3 +14,15 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+export function any(arr, callback) {
+
+  for (let value of arr) {
+         if (callback ) {
+        if (callback(value)){
+        return true;
+      }
+    }
+  else if(value){ return true;}
+  }
+   return false;
+  }

@@ -15,3 +15,18 @@
  * console.log(arrayDiff([1, 2, 3], [1, 2, 4])); -> [3, 4]
  * console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4'])); -> [4, '4']
  */
+
+export function arrayDiff(arr, arr2) {
+let arrNew=[];
+ArrayUni(arr,arr2);
+ArrayUni(arr2,arr);
+return arrNew;
+  
+    
+    function ArrayUni(array1, array2){ 
+        for (let value of array1) 
+        if (!array2.includes(value)) 
+            arrNew.push(value);
+
+    }
+}

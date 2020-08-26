@@ -39,6 +39,7 @@ import { createGenerator } from './array-practice/task5';
 import { transformArrayToNumber } from './array-practice/task6';
 import { take } from './array-practice/task7';
 import { without } from './array-practice/task8';
+import { indexOfAll } from './array-practice/task9';
 
 
 
@@ -137,6 +138,11 @@ console.log('task9 new', task9New()); // [true, 1]
 
  console.log('without',without([2, 1, 2, 3], 1, 2));// [3]
  console.log('without',without([2, 1, 10, 20], 1, 2)); // [10, 20]
+
+ console.log('=============');
+
+ console.log('indexOfAll',indexOfAll([1, 2, 3, 1, 2, 3], 1)); // [0, 3]
+ console.log('indexOfAll',indexOfAll([1, 2, 3], 4)); // [] 
 
 // console.log('=============');
 

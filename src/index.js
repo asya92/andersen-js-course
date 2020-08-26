@@ -38,6 +38,7 @@ import { union } from './array-practice/task4';
 import { createGenerator } from './array-practice/task5';
 import { transformArrayToNumber } from './array-practice/task6';
 import { take } from './array-practice/task7';
+import { without } from './array-practice/task8';
 
 
 
@@ -132,7 +133,11 @@ console.log('task9 new', task9New()); // [true, 1]
  console.log('take',take([1, 2, 3], 5)); //[1, 2, 3]
  console.log('take',take([1, 2, 3], 2)); // [1, 2]
 
- 
+ console.log('=============');
+
+ console.log('without',without([2, 1, 2, 3], 1, 2));// [3]
+ console.log('without',without([2, 1, 10, 20], 1, 2)); // [10, 20]
+
 // console.log('=============');
 
 // console.log('task11 old', task11Old({a: null}, 'a')); // false

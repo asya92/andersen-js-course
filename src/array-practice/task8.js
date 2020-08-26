@@ -11,3 +11,10 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+export function without(arr, ...num) {
+  let newArr=[];
+    for (let value of arr)
+     if (!num.includes(value))
+     newArr.push(value);
+  return newArr;
+  }
